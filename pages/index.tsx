@@ -8,6 +8,8 @@ import Footer from '../pages/components/footer';
 import appStyles from '../styles/App.module.css';
 import welcomeStyles from '../styles/welcomePanel.module.css';
 
+// eslint-disable-next-line react-hooks/exhaustive-deps
+
 export default function Home() {
 	const [favoritesList, setValue, addFavorite, removeFavorite, clearStorage] = useLocalStorage("favoritesList", []);
 	let [userPreferences, updateUserPreferences] = useState({
@@ -25,7 +27,7 @@ export default function Home() {
 		<div className={appStyles.appContainer}>
 			<Head>
 				<title>Mooneys Comic App</title>
-				<meta name="description" content="Browse Marvel's collections of comics." />
+				<meta name="description" content="Browse Marvels collections of comics." />
 				<link rel="icon" href="/bat-mask.png" sizes="any" />
 				<link rel="icon" href="/bat-mask.svg" type="image/svg+xml" />
 				{/* <link rel="preconnect" href="https://fonts.googleapis.com" />
