@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+:root {
+	--white: #00000000;
+	--off-white: #F8F8F2;
+	--lightest-gray: #00000029;
+	--light-gray: #8B8B8B;
+	--gray: #00000075;
+	--dark-gray: #000000B3;
+	--off-black: #222222;
+	--black: #000000;
+	--green: #9ECFC5;
+	--pink: #C24868E6;
+	--red: #C24868;
+	--Karla: Karla, serif, monospace;
+}
+
+
+html,
+body {
+	background-color: var(--off-white);
+	font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: light) {
+	html {
+		color-scheme: light;
+	}
+
+	body {
+		background: var(--off-white);
+		color: var(--black);
+	}
+}

@@ -1,0 +1,80 @@
+/**=====  Welcome Panel  =====*/
+.welcomeHeader {
+	margin: 0 auto;
+	padding-bottom: 80px;
+	position: relative;
+	width: 40%;
+	z-index: 1;
+}
+
+.welcomeHeader h2 {
+	color: var(--red);
+	font-family: Montserrat;
+	font-size: 50px;
+	font-weight: 900;
+	position: relative;
+	z-index: 5;
+}
+
+.welcomeHeader h3 {
+	background-color: var(--green);
+	color: var(--off-white);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 900;
+	padding: 10px 20px;
+	position: relative;
+	right: 3em;
+	rotate: -6deg;
+	text-shadow: 3px 3px 0px #222222;
+	top: 3.2em;
+	width: fit-content;
+	z-index: 1;
+}
+
+.welcomeHeader p {
+	color: var(--off-black);
+	font-size: 20px;
+}
+
+
+/**   Tablet   **/
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+
+	/**=====  Welcome Panel  =====*/
+	.welcomeHeader {
+		padding-bottom: 25px;
+		width: 75%;
+	}
+
+	.welcomeHeader h2 {
+		font-size: 20px;
+	}
+
+	.welcomeHeader h3 {
+		font-size: 16px;
+		right: 0.5em;
+		top: 0.5em;
+	}
+}
+
+
+/**   Phone   **/
+@media only screen and (max-width: 600px) {
+
+	/**=====  Welcome Panel  =====*/
+	.welcomeHeader {
+		padding-bottom: 25px;
+		width: 90%;
+	}
+
+	.welcomeHeader h2 {
+		font-size: 20px;
+	}
+
+	.welcomeHeader h3 {
+		font-size: 16px;
+		right: 0.5em;
+		top: 0.5em;
+	}
+}

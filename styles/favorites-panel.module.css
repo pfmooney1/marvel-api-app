@@ -1,0 +1,144 @@
+.favoritesPanel {
+	align-self: start;
+	background-color: var(--off-black);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	grid-area: favorites;
+	min-height: 500px;
+	padding: 0;
+	text-align: center;
+}
+
+.favoritesPanel ul {
+	display: block;
+	font-family: var(--Karla);
+	font-size: 18px;
+	list-style-type: none;
+	list-style-position: outside;
+	margin: 0;
+	padding: 0 0 20px 0;
+}
+
+.showFavoritesButton {
+	justify-self: end;
+	background-color: var(--red);
+	border: none;
+	color: var(--off-white);
+	display: none;
+	font-family: var(--Karla);
+	font-size: 16px;
+	height: fit-content;
+	padding: 8px;
+	position: relative;
+	margin-top: auto;
+	margin-bottom: 0;
+}
+
+/** Favorites Card **/
+.favoriteCard {
+	display: grid;
+	font-family: inherit;
+	font-size: medium;
+	gap: 5px;
+	grid-template-columns: 65px 1fr;
+	grid-template-rows: 30px 1fr;
+	grid-template-areas:
+		"image title"
+		"image issue";
+	margin: 10px 20px;
+	position: relative;
+	text-align: left;
+}
+
+.image {
+	grid-area: image;
+}
+
+.image:focus {
+	border: 4px solid var(--red);
+	box-shadow: 3px 8px 12px #00000080;
+	scale: 1.10;
+}
+
+.image:hover {
+	border: 4px solid var(--red);
+	box-shadow: 3px 8px 12px #00000080;
+	scale: 1.10;
+}
+
+.title {
+	display: block;
+	font-family: inherit;
+	grid-area: title;
+	max-width: 500px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.issue {
+	grid-area: issue;
+	font-family: inherit;
+}
+
+.favoriteCard .deleteButton {
+	background-color: var(--off-white);
+	border: none;
+	border-radius: 50%;
+	box-sizing: content-box;
+	color: var(--red);
+	font-size: 12px;
+	font-weight: 700;
+	height: 14px;
+	left: -10px;
+	line-height: 0;
+	opacity: .85;
+	padding: 2px;
+	position: relative;
+	text-align: center;
+	top: -95px;
+	width: 14px;
+	z-index: 10;
+}
+
+.favoriteCard .deleteButton:focus {
+	scale: 1.5;
+}
+
+/**   Tablet   **/
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+	.favoritesPanel.hidden {
+		display: none;
+	}
+
+	.showFavoritesButton {
+		display: block;
+	}
+
+	.favoriteCard .deleteButton {
+		padding: 8px;
+	}
+}
+
+
+/**   Phone   **/
+@media only screen and (max-width: 600px) {
+	/** Favorites Card **/
+	.favoritesPanel.hidden {
+		display: none;
+	}
+
+	.favoritesPanel h2 {
+		text-align: left;
+		padding-left: 30px;
+	}
+
+	.showFavoritesButton {
+		display: block;
+	}
+
+	.favoriteCard .deleteButton {
+		padding: 8px;
+	}
+}

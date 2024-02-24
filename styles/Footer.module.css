@@ -1,0 +1,16 @@
+.footer {
+	align-items: center;
+	background-color: var(--off-black);
+	color: var(--off-white);
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	margin: 10px 0 0 0;
+	padding: 2rem 15px;
+	text-align: center;
+}
+
+.footer a {
+	margin: 6px;
+	text-decoration: underline;
+}

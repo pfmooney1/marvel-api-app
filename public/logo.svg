@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="106.066" height="106.066" viewBox="0 0 106.066 106.066">
+  <defs>
+    <filter id="Path_1" x="28.74" y="29.04" width="46.24" height="46.92" filterUnits="userSpaceOnUse">
+      <feOffset dx="-4" dy="-3" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#9ecfc5"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="logo" transform="translate(-105 -216)">
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="75" height="75" transform="translate(121 232)" fill="#222"/>
+    <path id="Rectangle_10_-_Outline" data-name="Rectangle 10 - Outline" d="M3,3V72H72V3H3M0,0H75V75H0Z" transform="translate(121 232)" fill="#f8f8f2"/>
+    <rect id="Rectangle_9" data-name="Rectangle 9" width="75" height="75" transform="translate(109 249.305) rotate(-23)" fill="#9ecfc5"/>
+    <path id="Rectangle_9_-_Outline" data-name="Rectangle 9 - Outline" d="M3,3V72H72V3H3M0,0H75V75H0Z" transform="translate(109 249.305) rotate(-23)" fill="#f8f8f2"/>
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="75" height="75" transform="translate(105 269.033) rotate(-45)" fill="#c24868"/>
+    <path id="Rectangle_8_-_Outline" data-name="Rectangle 8 - Outline" d="M3,3V72H72V3H3M0,0H75V75H0Z" transform="translate(105 269.033) rotate(-45)" fill="#f8f8f2"/>
+    <g transform="matrix(1, 0, 0, 1, 105, 216)" filter="url(#Path_1)">
+      <path id="Path_1-2" data-name="Path 1" d="M25.14.96c8.22,0,14.7-3,18.84-8.4l-8.94-7.98c-2.46,3.12-5.4,4.92-9.18,4.92-5.88,0-9.84-4.08-9.84-10.5s3.96-10.5,9.84-10.5c3.78,0,6.72,1.8,9.18,4.92l8.94-7.98c-4.14-5.4-10.62-8.4-18.84-8.4-13.5,0-23.4,9.06-23.4,21.96S11.64.96,25.14.96Z" transform="translate(31 75)" fill="#f8f8f2"/>
+    </g>
+  </g>
+</svg>

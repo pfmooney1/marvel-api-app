@@ -1,0 +1,42 @@
+.comicsFeed {
+	align-items: center;
+	gap: 40px;
+	justify-content: center;
+}
+
+.errorMessage {
+	text-align: center;
+}
+
+.errorMessage i {
+	font-size: 6em;
+}
+
+.pageSelector {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	margin: 0 auto;
+}
+
+.pageSelector p {
+	font: normal normal normal 18px/16px var(--Karla);
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.pageSelector button {
+	background-color: var(--off-black);
+	border-radius: 50%;
+	color: var(--off-white);
+	font-size: 18px;
+	height: 35px;
+	width: 35px;
+}
+
+.pageSelector button:hover,
+.pageSelector button:focus {
+	background-color: var(--red);
+	border: 4px solid var(--off-black);
+}

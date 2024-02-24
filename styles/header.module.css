@@ -1,0 +1,164 @@
+/**=====  Header  =====*/
+header.header {
+	align-items: center;
+	background: transparent url('../public/hero-photo.png') 0% 0% no-repeat padding-box;
+	background-size: cover;
+	display: grid;
+	height: 600px;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+h1.pageTitle {
+	align-items: center;
+	background: #C24868E6 0% 0% no-repeat padding-box;
+	color: var(--off-white);
+	display: flex;
+	font: normal normal 900 61px/74px Montserrat;
+	font-size: 5em;
+	font-weight: 900;
+	height: 175px;
+	justify-content: center;
+	margin: 0 auto;
+	text-align: center;
+	text-shadow: 3px 3px 0px #000000;
+	width: 580px;
+}
+
+.CCLogo {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+.halftone {
+	bottom: -15px;
+	height: auto;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+}
+
+.hamburger {
+	display: none;
+}
+
+/**=====  Nav Bar  ===== */
+.navBar {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	font-weight: 600;
+	gap: 20px;
+	justify-items: center;
+	position: absolute;
+	right: 50px;
+	top: 50px;
+}
+
+.navBar a,
+.navBar button {
+	background-color: transparent;
+	border: none;
+	color: var(--off-white);
+	font-size: 18px;
+	font-weight: 600;
+}
+.navBar a:focus,
+.navBar button:focus {
+	background-color: #00000080;
+	border: 2px solid white;
+}
+
+.navBar i {
+	padding-right: 5px;
+}
+
+.navBar .favoritesCount {
+	color: var(--off-white);
+	font-weight: 400;
+}
+
+
+
+/**   Tablet   **/
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+	h1.pageTitle {
+		font-size: 50px;
+		height: fit-content;
+		padding: 2px 30px;
+		width: fit-content;
+	}
+
+	.CCLogo {
+		height: 90px;
+		width: 90px;
+	}
+
+	.halftone {
+		height: 150px;
+		width: auto;
+		overflow: hidden;
+	}
+}
+
+
+/**   Phone   **/
+@media only screen and (max-width: 600px) {
+	/**=====  Header  =====*/
+	header.header {
+		background: transparent url('../public/hero-photo.png') 0% 0% no-repeat padding-box;
+		height: 500px;
+	}
+
+	h1.pageTitle {
+		font-size: 25px;
+		height: fit-content;
+		padding: 2px 30px;
+		width: fit-content;
+	}
+
+	.CCLogo {
+		height: 90px;
+		width: 90px;
+	}
+
+	.halftone {
+		height: 150px;
+		width: auto;
+		overflow: hidden;
+	}
+
+
+	/**=====  Nav Bar  ===== */
+	.navBar {
+		align-items: flex-end;
+		flex-direction: column-reverse;
+		gap: 10px;
+		right: 20px;
+		top: 20px;
+	}
+
+	.navBar.navCollapsed {
+		align-items: center;
+		flex-direction: row;
+	}
+
+	.navBar button {
+		border: 2px solid white;
+		border-radius: 5px;
+		padding: 10px 12px;
+	}
+
+	.hamburger {
+		display: block;
+	}
+
+	.hidden {
+		display: none;
+	}
+}
