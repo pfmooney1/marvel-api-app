@@ -36,10 +36,8 @@ function FavoritesPanel({ clearStorage, favoritesList, removeFavorite, visible, 
 			updateOverlayVisible(prev => !prev)
 		}
 		function showComicDetail() {
-			if (event.key === "Enter" || event.button === 0) {
 				returnOverlay();
 				updateOverlayVisible(prev => !prev);
-			}
 		}
 
 		let altText = `Cover for '${favItem.title}'`

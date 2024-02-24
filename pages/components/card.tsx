@@ -59,10 +59,10 @@ export function Card({ comic, favoritesList, addFavorite, removeFavorite }: Prop
 		updateOverlayVisible(prev => !prev)
 	}
 	function showComicDetail() {
-		if (event.key === "Enter" || event.button === 0) {
+		// if (event.key === "Enter" || event.button === 0) {
 			returnOverlay();
 			updateOverlayVisible(prev => !prev);
-		}
+		// }
 	}
 
 	return (
