@@ -24,7 +24,7 @@ export default function Home() {
 	return (
 		<div className={appStyles.appContainer}>
 			<Head>
-				<title>Mooney's Comic App</title>
+				<title>Mooneys Comic App</title>
 				<meta name="description" content="Browse Marvel's collections of comics." />
 				<link rel="icon" href="/bat-mask.png" sizes="any" />
 				<link rel="icon" href="/bat-mask.svg" type="image/svg+xml" />
