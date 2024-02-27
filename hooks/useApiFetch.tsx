@@ -17,12 +17,12 @@ export function useApiFetch(userPreferences: { filterType : string, filterValue 
 			{ "type": "focDate", "date": "2099-10-30T00:00:00-0500" }
 		],
 		"thumbnail": {
-			"path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
+			"path": "https://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available",
 			"extension": "jpg"
 		},
-		"creators": { "available": 1, "collectionURI": "http://gateway.marvel.com/v1/public/comics/82967/creators", "items": [{ "resourceURI": "http://gateway.marvel.com/v1/public/creators/10021", "name": "Jim Nausedas", "role": "editor" }], "returned": 1 },
-		"characters": { "available": 0, "collectionURI": "http://gateway.marvel.com/v1/public/comics/82967/characters", "items": [], "returned": 0 }, "stories": { "available": 2, "collectionURI": "http://gateway.marvel.com/v1/public/comics/82967/stories", "items": [{ "resourceURI": "http://gateway.marvel.com/v1/public/stories/183698", "name": "cover from Marvel Previews (2017)", "type": "cover" }, { "resourceURI": "http://gateway.marvel.com/v1/public/stories/183699", "name": "story from Marvel Previews (2017)", "type": "interiorStory" }], "returned": 2 },
-		"events": { "available": 0, "collectionURI": "http://gateway.marvel.com/v1/public/comics/82967/events", "items": [], "returned": 0 }
+		"creators": { "available": 1, "collectionURI": "https://gateway.marvel.com/v1/public/comics/82967/creators", "items": [{ "resourceURI": "https://gateway.marvel.com/v1/public/creators/10021", "name": "Jim Nausedas", "role": "editor" }], "returned": 1 },
+		"characters": { "available": 0, "collectionURI": "https://gateway.marvel.com/v1/public/comics/82967/characters", "items": [], "returned": 0 }, "stories": { "available": 2, "collectionURI": "https://gateway.marvel.com/v1/public/comics/82967/stories", "items": [{ "resourceURI": "https://gateway.marvel.com/v1/public/stories/183698", "name": "cover from Marvel Previews (2017)", "type": "cover" }, { "resourceURI": "https://gateway.marvel.com/v1/public/stories/183699", "name": "story from Marvel Previews (2017)", "type": "interiorStory" }], "returned": 2 },
+		"events": { "available": 0, "collectionURI": "https://gateway.marvel.com/v1/public/comics/82967/events", "items": [], "returned": 0 }
 	}];
 	tidyData(sampleData, 1);
 
@@ -47,7 +47,7 @@ export function useApiFetch(userPreferences: { filterType : string, filterValue 
 			if (page >= 2) {
 				offset = `offset=${offsetAmount}&`;
 			}
-			const address = `http://gateway.marvel.com/v1/public/`;
+			const address = `https://gateway.marvel.com/v1/public/`;
 			const getComics = "comics?";
 			return address + modifier + getComics + offset + "&ts=1&limit=15&apikey=" + ApiKey;
 		}
