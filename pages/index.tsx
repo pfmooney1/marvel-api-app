@@ -11,17 +11,14 @@ import welcomeStyles from '../styles/welcomePanel.module.css';
 // eslint-disable-next-line react-hooks/exhaustive-deps
 
 export default function Home() {
-	const [favoritesList, setValue, addFavorite, removeFavorite, clearStorage] = useLocalStorage("favoritesList", []);
-	let [userPreferences, updateUserPreferences] = useState({
+	const [userPreferences, updateUserPreferences] = useState({
 		filterType: "",
 		filterValue: "",
 		page: 1
 	});
-	let [comicsData, fetchAndHandleData] = useApiFetch(userPreferences);
+	const [favoritesList, setValue, addFavorite, removeFavorite, clearStorage] = useLocalStorage("favoritesList", []);
+	const [comicsData, fetchAndHandleData] = useApiFetch(userPreferences);
 
-	useEffect(() => {
-		fetchAndHandleData();
-	}, [userPreferences]);
 
 	return (
 		<div className={appStyles.appContainer}>
@@ -50,7 +47,6 @@ export default function Home() {
 				removeFavorite={removeFavorite}
 				userPreferences={userPreferences}
 				updateUserPreferences={updateUserPreferences}
-				clearStorage={clearStorage}
 			/>
 			<Footer />
 		</div>

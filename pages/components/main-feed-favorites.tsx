@@ -5,7 +5,7 @@ import styles from "../../styles/App.module.css";
 import FavStyles from "../../styles/favorites-panel.module.css";
 
 type Props = {
-	comicsData: Array<{}>, 
+	comicsData: any, 
 	favoritesList: Array<{}>, 
 	addFavorite: Function, 
 	removeFavorite: Function, 

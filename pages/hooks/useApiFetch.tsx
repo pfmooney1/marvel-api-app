@@ -72,7 +72,7 @@ export function useApiFetch(userPreferences: { filterType : string, filterValue 
 	}
 	useEffect(() => {
 		fetchAndHandleData();
-	}, []);
+	}, [userPreferences]);
 
 
 

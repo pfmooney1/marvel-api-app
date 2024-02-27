@@ -1,18 +1,27 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function useLocalStorage(key: string, initialValue: any) {
-	const [favoritesList, setStoredValue] = useState(() => {
-		if (typeof window === "undefined") {
-			return initialValue;
+	// const [favoritesList, setStoredValue] = useState(() => {
+	// 	if (typeof window === "undefined") {
+	// 		return initialValue;
+	// 	}
+	// 	try {
+	// 		const item = window.localStorage.getItem(key);
+	// 		return item ? JSON.parse(item) : initialValue;
+	// 	} catch (error) {
+	// 		console.log(error);
+	// 		return initialValue;
+	// 	}
+	// });
+	const [favoritesList, setStoredValue] = useState([]);
+	useEffect(() => {
+		if (window.localStorage) {
+			let item : any = window.localStorage.getItem(key);
+			if (item) {
+				setStoredValue(JSON.parse(item));
+			}
 		}
-		try {
-			const item = window.localStorage.getItem(key);
-			return item ? JSON.parse(item) : initialValue;
-		} catch (error) {
-			console.log(error);
-			return initialValue;
-		}
-	});
+	}, []);
 	const setValue = (value: any) => {
 		try {
 			const valueToStore = value instanceof Function ? value(favoritesList) : value;
@@ -47,6 +56,8 @@ function useLocalStorage(key: string, initialValue: any) {
 			window.localStorage.removeItem(key);
 		}
 	};
+
+
 	return [favoritesList, setValue, addFavorite, removeFavorite, clearStorage];
 }
 export default useLocalStorage;

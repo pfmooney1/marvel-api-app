@@ -3,7 +3,7 @@ import Image from "next/image";
 import FavStyles from "../../styles/favorites-panel.module.css";
 import styles from '../../styles/App.module.css'
 
-function FavoritesPanel({ clearStorage, favoritesList, removeFavorite, visible, toggleFavorites }: any) {
+function FavoritesPanel({ favoritesList, removeFavorite, visible, toggleFavorites }: any) {
 	let favoritesMapped = favoritesList.map((favItem: any, index: number) => (
 		<FavoritesLI
 			favItem={favItem}
