@@ -57,7 +57,6 @@ function useLocalStorage(key: string, initialValue: any) {
 		}
 	};
 
-
 	return [favoritesList, setValue, addFavorite, removeFavorite, clearStorage];
 }
 export default useLocalStorage;

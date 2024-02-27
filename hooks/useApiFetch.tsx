@@ -123,4 +123,4 @@ export function useApiFetch(userPreferences: { filterType : string, filterValue 
 	}
 	return [comicsData, fetchAndHandleData];
 }
-export default { useApiFetch };
+export default useApiFetch;

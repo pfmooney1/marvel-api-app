@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { useApiFetch } from './hooks/useApiFetch';
-import useLocalStorage from './hooks/useLocalStorageSave';
+import { useApiFetch } from '../hooks/useApiFetch';
+import useLocalStorage from '../hooks/useLocalStorageSave';
 import Head from 'next/head';
-import Header from '../pages/components/header';
-import Main from '../pages/components/main-feed-favorites'
-import Footer from '../pages/components/footer';
+import Header from '../components/header';
+import Main from '../components/main-feed-favorites'
+import Footer from '../components/footer';
 import appStyles from '../styles/App.module.css';
 import welcomeStyles from '../styles/welcomePanel.module.css';
 
