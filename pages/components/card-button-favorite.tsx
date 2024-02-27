@@ -1,5 +1,5 @@
 import Script from 'next/script';
-import cardstyles from '../../styles/card.module.css';
+import cardstyles from '../../styles/Card.module.css';
 
 type Props = {
 	comic: object;

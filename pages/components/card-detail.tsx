@@ -1,4 +1,4 @@
-import cardstyles from '../../styles/card.module.css';
+import cardstyles from '../../styles/Card.module.css';
 
 export function Detail({ comic }: any) {
 	if (!comic) return null;
