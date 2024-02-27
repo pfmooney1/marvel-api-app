@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Detail from './card-detail';
 import Button_favorite from './card-button-favorite';
 import Button_unfavorite from './card-button-unfavorite';
-import cardstyles from '../../styles/Card.module.css';
-import styles from '../../styles/App.module.css';
+import cardstyles from '/styles/Card.module.css';
+import styles from '/styles/App.module.css';
 
 type Props = {
 	comic: { id: number, title: string, imageSrc: string },

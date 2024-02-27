@@ -1,4 +1,4 @@
-import ComicFeedStyles from '../../styles/comics-feed.module.css';
+import ComicFeedStyles from '/styles/comics-feed.module.css';
 
 function PageSelector({ userPreferences, updateUserPreferences, totalFromThisSet }: any) {
 	let firstComicOnPage = ((userPreferences.page - 1) * 15) + 1;

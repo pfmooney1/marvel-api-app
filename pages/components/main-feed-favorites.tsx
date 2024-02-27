@@ -1,8 +1,8 @@
 import { useState } from "react";
 import ComicsFeed from "./comics-feed";
 import FavoritesPanel from "./favorites-panel";
-import styles from "../../styles/App.module.css";
-import FavStyles from "../../styles/favorites-panel.module.css";
+import styles from "/styles/App.module.css";
+import FavStyles from "/styles/favorites-panel.module.css";
 
 type Props = {
 	comicsData: any, 

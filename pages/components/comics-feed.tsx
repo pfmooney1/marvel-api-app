@@ -1,6 +1,6 @@
 import Card from './card'
 import PageSelector from './page-selector';
-import ComicFeedStyles from '../../styles/comics-feed.module.css';
+import ComicFeedStyles from '/styles/comics-feed.module.css';
 
 function ComicsFeed({ comicsData, addFavorite, favoritesList, removeFavorite, userPreferences, updateUserPreferences }: any) {
 	let errorMessage = (

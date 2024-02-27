@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
-import FavStyles from "../../styles/favorites-panel.module.css";
-import styles from '../../styles/App.module.css'
+import FavStyles from "/styles/favorites-panel.module.css";
+import styles from '/styles/App.module.css'
 
 function FavoritesPanel({ favoritesList, removeFavorite, visible, toggleFavorites }: any) {
 	

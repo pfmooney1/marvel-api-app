@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { useState } from 'react';
-import headerStyles from '../../styles/header.module.css';
+import headerStyles from '/styles/header.module.css';
 
 export function Header({ favoritesList }: any) {
 	const [navCollapsed, toggleNavCollapsed] = useState(false)
