@@ -1,19 +1,31 @@
-import {useState} from "react";
+import { useState } from "react";
 import Image from "next/image";
 import FavStyles from "../../styles/favorites-panel.module.css";
 import styles from '../../styles/App.module.css'
 
 function FavoritesPanel({ favoritesList, removeFavorite, visible, toggleFavorites }: any) {
-	let favoritesMapped = favoritesList.map((favItem: any, index: number) => (
-		<FavoritesLI
-			favItem={favItem}
-			index={index}
-			removeFavorite={removeFavorite}
-			key={favItem.id}
-			suppressHydrationWarning
-		/>
-	))
-
+	
+	function FavoritesUL() {
+		if (favoritesList[0] !== undefined) {
+			return (
+				<ul suppressHydrationWarning>
+						{favoritesList.map((favItem: any, index: number) => (
+							<FavoritesLI
+								favItem={favItem}
+								index={index}
+								removeFavorite={removeFavorite}
+								key={favItem.id}
+								suppressHydrationWarning
+							/>
+							))
+						}
+				</ul>
+			)
+		}
+		else {
+			return null;
+		}
+	}
 	function FavoritesLI({ removeFavorite, favItem, index }: any) {
 		// * Toggles the Overlay panel
 		const [overlayVisible, updateOverlayVisible] = useState(false)
@@ -36,8 +48,8 @@ function FavoritesPanel({ favoritesList, removeFavorite, visible, toggleFavorite
 			updateOverlayVisible(prev => !prev)
 		}
 		function showComicDetail() {
-				returnOverlay();
-				updateOverlayVisible(prev => !prev);
+			returnOverlay();
+			updateOverlayVisible(prev => !prev);
 		}
 
 		let altText = `Cover for '${favItem.title}'`
@@ -69,12 +81,7 @@ function FavoritesPanel({ favoritesList, removeFavorite, visible, toggleFavorite
 	return (
 		<div className={visible} suppressHydrationWarning>
 			<h2>Favorites</h2>
-			{favoritesList.length ?
-				<ul suppressHydrationWarning>
-					{favoritesMapped}
-				</ul>
-				: null
-			}
+				<FavoritesUL />
 			<button onClick={toggleFavorites} className={FavStyles.showFavoritesButton}>
 				{visible ? "Hide " : "Show "}
 				Favorites <i className="fas fa-bolt"></i>

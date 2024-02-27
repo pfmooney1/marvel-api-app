@@ -43,7 +43,7 @@ export default function Home() {
 			<Main
 				comicsData={comicsData}
 				favoritesList={favoritesList}
-				addFavorite={addFavorite}
+				addFavorite ={addFavorite}
 				removeFavorite={removeFavorite}
 				userPreferences={userPreferences}
 				updateUserPreferences={updateUserPreferences}

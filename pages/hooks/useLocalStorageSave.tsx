@@ -13,7 +13,7 @@ function useLocalStorage(key: string, initialValue: any) {
 	// 		return initialValue;
 	// 	}
 	// });
-	const [favoritesList, setStoredValue] = useState([]);
+	const [favoritesList, setStoredValue] = useState([{}]);
 	useEffect(() => {
 		if (window.localStorage) {
 			let item : any = window.localStorage.getItem(key);

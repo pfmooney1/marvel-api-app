@@ -82,7 +82,6 @@ export function useApiFetch(userPreferences: { filterType : string, filterValue 
 			delete comic.diamondCode;
 			delete comic.collectedIssues;
 			delete comic.collections;
-			delete comic.digitalId;
 			delete comic.ean;
 			delete comic.variants;
 			delete comic.pageCount;
