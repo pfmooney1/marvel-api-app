@@ -38,7 +38,7 @@ export default function Home() {
 			<div className={welcomeStyles.welcomeHeader}>
 				<h3>New Comics!</h3>
 				<h2>Coming Out Daily</h2>
-				<p>Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				<p>Built with TypeScript + NextJS and hosted with Vercel, this project fetches data from the Marvel API and lets you browse Marvel’s catalogue of comic books. Save your favorites with Local Storage, filter the results by character or creator, and view front covers in full screen.</p>
 			</div>
 			<Main
 				comicsData={comicsData}

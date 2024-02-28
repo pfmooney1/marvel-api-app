@@ -56,8 +56,11 @@ h1.pageTitle {
 	gap: 20px;
 	justify-items: center;
 	position: absolute;
-	right: 50px;
-	top: 50px;
+	right: 30px;
+	top: 30px;
+	padding: 20px;
+	background-color: #00000040;
+	border-radius: 20px;
 }
 
 .navBar a,

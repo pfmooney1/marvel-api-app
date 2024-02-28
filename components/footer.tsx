@@ -10,10 +10,10 @@ export function Footer() {
 				width={110}
 				height={110}
 			/>
+			<p>Made by Patrick Mooney</p>
 			<p>
-				<a>Privacy Policy</a>|<a>Terms of Service</a>
+				<a href="https://patrickmooney.tech">See my portfolio</a>
 			</p>
-			<p>Copyright 2022. Comic Closet, LLC. All rights reserved.</p>
 		</footer>
 	)
 }
