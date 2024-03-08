@@ -27,3 +27,7 @@ Patrick Mooney - pfmooney@me.com
 Site: https://patrickmooney.tech/
 
 Project Link: https://github.com/pfmooney1/marvel-api-app
+
+
+## Acknowledgments
+Marvel and their excellent API: https://developer.marvel.com/
