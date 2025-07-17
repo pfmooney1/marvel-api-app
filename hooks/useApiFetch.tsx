@@ -70,6 +70,7 @@ export function useApiFetch(userPreferences: { filterType : string, filterValue 
 		};
 		fetchData();
 	}
+	
 	useEffect(() => {
 		fetchAndHandleData();
 	}, [userPreferences]);
