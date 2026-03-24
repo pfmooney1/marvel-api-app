@@ -1,10 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-}
-module.exports = nextConfig;
-module.exports = {
+
   images: {
-        domains: ['i.annihil.us'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.annihil.uççs',
+      },
+      {
+        protocol: 'https',
+        hostname: '**.annihil.us',
+      },
+    ],
   },
-}
+};
+
+module.exports = nextConfig;
